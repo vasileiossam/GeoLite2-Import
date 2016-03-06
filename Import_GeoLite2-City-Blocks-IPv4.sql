@@ -4,8 +4,8 @@ CREATE TABLE [GeoLite2IPv4](
 	[geoname_id] [int] NULL,
 	[registered_country_geoname_id] [int] NULL,
 	[represented_country_geoname_id] [int] NULL,
-	[is_anonymous_proxy] [tinyint] NULL DEFAULT ((0)),
-	[is_satellite_provider] [tinyint] NULL DEFAULT ((0)),
+	[is_anonymous_proxy] [int] NULL DEFAULT ((0)),
+	[is_satellite_provider] [int] NULL DEFAULT ((0)),
 	[postal_code] [nvarchar](16) NULL,
 	[latitude] [decimal](9,6) NULL,
 	[longitude] [decimal](9,6) NULL
