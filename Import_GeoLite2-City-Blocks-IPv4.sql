@@ -18,7 +18,7 @@ CREATE TABLE [GeoLite2IPv4](
 --import csv file
 BULK INSERT GeoLite2IPv4 
 FROM 'C:\dev\GeoLite2 Import\GeoLite2-City-CSV_20160301\GeoLite2-City-Blocks-IPv4.csv'
-WITH
+WITH 
 (
     FIRSTROW = 2,
     FIELDTERMINATOR = ',',  --CSV field delimiter
@@ -28,7 +28,7 @@ WITH
 -- add fields from legacy GeoLite database
 ALTER TABLE GeoLite2IPv4 ADD startIpNum bigint NULL
 ALTER TABLE GeoLite2IPv4 ADD endIpNum bigint NULL
-
+GO
 -- create index for ip range
 --CREATE NONCLUSTERED INDEX GeoLite2_IPRange ON [dbo].[GeoLite2IPv4] ([startIpNum],[endIpNum])
 

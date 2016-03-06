@@ -21,7 +21,8 @@ CREATE TABLE GeoLite2Locations (
 ) ON [PRIMARY]
 
 BULK INSERT GeoLite2Locations 
-FROM 'C:\dev\GeoLite2 Import\GeoLite2-City-CSV_20160301\GeoLite2-City-Locations-en.csv'
+--FROM 'C:\dev\GeoLite2 Import\GeoLite2-City-CSV_20160301\GeoLite2-City-Locations-en.csv'
+FROM 'C:\dev\GeoLite2 Import\GeoLite2-City-CSV_20160301\GeoLite2-City-Locations-en-UCS-2.csv'
 WITH
 (
     FIRSTROW = 2,
