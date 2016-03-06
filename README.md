@@ -14,7 +14,6 @@ https://dev.maxmind.com/geoip/geoip2/geolite2/
 3. Modify the import sql scripts and set the correct path to the csv files.
 
 4. Make sure that Import_GeoLite2-City-Locations.sql has imported all strings as unicode.
-
 The only thing that worked for me was first to convert the GeoLite2-City-Locations file to UCS-2 encoding.
 You can use Notepad++ to quickly do the conversion.
 
