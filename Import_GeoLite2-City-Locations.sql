@@ -24,7 +24,6 @@ BULK INSERT GeoLite2Locations
 FROM 'C:\dev\GeoLite2 Import\GeoLite2-City-CSV_20160301\GeoLite2-City-Locations-en.csv'
 WITH
 (
-
     FIRSTROW = 2,
     FIELDTERMINATOR = ',',  --CSV field delimiter
     ROWTERMINATOR = '0x0a'  --Use to shift the control to next row
