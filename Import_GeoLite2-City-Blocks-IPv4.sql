@@ -26,8 +26,8 @@ WITH
 ) 
 
 -- add fields from legacy GeoLite database
-ALTER TABLE GeoLite2IPv4 ADD startIpNum bigint NULL
-ALTER TABLE GeoLite2IPv4 ADD endIpNum bigint NULL
+ALTER TABLE GeoLite2IPv4 ADD startIpNum bigint NOT NULL DEFAULT 0
+ALTER TABLE GeoLite2IPv4 ADD endIpNum bigint NOT NULL DEFAULT 0
 GO
 -- create index for ip range
 --CREATE NONCLUSTERED INDEX GeoLite2_IPRange ON [dbo].[GeoLite2IPv4] ([startIpNum],[endIpNum])
